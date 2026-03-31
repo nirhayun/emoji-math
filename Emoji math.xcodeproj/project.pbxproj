@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0001000000000000000003 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AA0001000000000000000002 /* FirebaseAnalytics */; };
+		AA0002000000000000000003 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = AA0002000000000000000002 /* GoogleMobileAds */; };
+		960E22632081506800EE2542 /* CustomAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960E22622081506800EE2542 /* CustomAd.swift */; };
+		962477E720C12996009E3856 /* sound.timer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 962477E420C12995009E3856 /* sound.timer.mp3 */; };
+		962477EA20C1348A009E3856 /* sound.fifty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 962477E820C13489009E3856 /* sound.fifty.mp3 */; };
+		962477F120C18648009E3856 /* sound.hint.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 962477F020C18648009E3856 /* sound.hint.mp3 */; };
+		96262BD42038CA5300D3F62D /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96262BD32038CA5300D3F62D /* GameKit.framework */; };
+		962737EC20225C8400D9E759 /* sound.pass.stage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 962737E720225C8200D9E759 /* sound.pass.stage.mp3 */; };
+		962737ED20225C8400D9E759 /* sound.wrong.answer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 962737E820225C8300D9E759 /* sound.wrong.answer.mp3 */; };
+		962737EE20225C8400D9E759 /* sound.out.of.time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 962737E920225C8300D9E759 /* sound.out.of.time.mp3 */; };
+		962737EF20225C8400D9E759 /* sound.button.click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 962737EA20225C8400D9E759 /* sound.button.click.mp3 */; };
+		962737F020225C8400D9E759 /* sound.correct.answer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 962737EB20225C8400D9E759 /* sound.correct.answer.mp3 */; };
+		9642C786202CC0A60035AF8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9642C785202CC0A60035AF8E /* LaunchScreen.storyboard */; };
+		9653DC3020763F0100F0F75B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9653DC2F20763F0100F0F75B /* GoogleService-Info.plist */; };
+		965A8A0B1FA7C3A0008C49AB /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A8A0A1FA7C3A0008C49AB /* StartScreen.swift */; };
+		966794D91FD07F3B0046DF38 /* Stages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966794D81FD07F3B0046DF38 /* Stages.swift */; };
+		9680B3581FFC1B4300C42AD8 /* PassStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9680B3571FFC1B4300C42AD8 /* PassStage.swift */; };
+		96AE61111EF549BF00AFA495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE61101EF549BF00AFA495 /* AppDelegate.swift */; };
+		CCCC0001BBBB000100000002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC0001BBBB000100000001 /* SceneDelegate.swift */; };
+		96AE61131EF549BF00AFA495 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE61121EF549BF00AFA495 /* MainController.swift */; };
+		96AE61161EF549BF00AFA495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96AE61141EF549BF00AFA495 /* Main.storyboard */; };
+		96AE61181EF549BF00AFA495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96AE61171EF549BF00AFA495 /* Assets.xcassets */; };
+		96AE61261EF549C000AFA495 /* Math_Quiz_ObjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE61251EF549C000AFA495 /* Math_Quiz_ObjectsTests.swift */; };
+		96AE61311EF549C000AFA495 /* Math_Quiz_ObjectsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE61301EF549C000AFA495 /* Math_Quiz_ObjectsUITests.swift */; };
+		96B9DEC22079286900B06193 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B9DEC12079286800B06193 /* SplashScreen.swift */; };
+		96E2F13820385CFA00798F93 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2F13720385CFA00798F93 /* SaveData.swift */; };
+		96F43B201F2CB0EB005CDBB1 /* EquationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F43B1F1F2CB0EB005CDBB1 /* EquationGenerator.swift */; };
+		E1D8D8D80010000100000002 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D8D8D80010000100000001 /* Date+Helpers.swift */; };
+		E1D8D8D80010000200000002 /* UIImage+Masking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D8D8D80010000200000001 /* UIImage+Masking.swift */; };
+		E1D8D8D80010000300000002 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D8D8D80010000300000001 /* String+Validation.swift */; };
+		EEEE0001AAAA000100000002 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE0001AAAA000100000001 /* Constants.swift */; };
+		EEEE0002AAAA000100000002 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE0002AAAA000100000001 /* AudioManager.swift */; };
+		EEEE0003AAAA000100000002 /* GameCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE0003AAAA000100000001 /* GameCenterManager.swift */; };
+		EEEE0004AAAA000100000002 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE0004AAAA000100000001 /* AdManager.swift */; };
+		F1E2D3C4B5A69870605040303 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F1E2D3C4B5A69870605040302 /* PrivacyInfo.xcprivacy */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96AE61221EF549C000AFA495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96AE61051EF549BF00AFA495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96AE610C1EF549BF00AFA495;
+			remoteInfo = "Math Quiz Objects";
+		};
+		96AE612D1EF549C000AFA495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96AE61051EF549BF00AFA495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96AE610C1EF549BF00AFA495;
+			remoteInfo = "Math Quiz Objects";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		960E22622081506800EE2542 /* CustomAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAd.swift; sourceTree = "<group>"; };
+		962477E420C12995009E3856 /* sound.timer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.timer.mp3; sourceTree = "<group>"; };
+		962477E820C13489009E3856 /* sound.fifty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.fifty.mp3; sourceTree = "<group>"; };
+		962477F020C18648009E3856 /* sound.hint.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.hint.mp3; sourceTree = "<group>"; };
+		96262BD32038CA5300D3F62D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		962737E720225C8200D9E759 /* sound.pass.stage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.pass.stage.mp3; sourceTree = "<group>"; };
+		962737E820225C8300D9E759 /* sound.wrong.answer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.wrong.answer.mp3; sourceTree = "<group>"; };
+		962737E920225C8300D9E759 /* sound.out.of.time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.out.of.time.mp3; sourceTree = "<group>"; };
+		962737EA20225C8400D9E759 /* sound.button.click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.button.click.mp3; sourceTree = "<group>"; };
+		962737EB20225C8400D9E759 /* sound.correct.answer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.correct.answer.mp3; sourceTree = "<group>"; };
+		9642C785202CC0A60035AF8E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9653DC2F20763F0100F0F75B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		965A8A0A1FA7C3A0008C49AB /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		96678FE7202B7B060017D2A0 /* Emoji math-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Emoji math-Bridging-Header.h"; sourceTree = "<group>"; };
+		966794D81FD07F3B0046DF38 /* Stages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stages.swift; sourceTree = "<group>"; };
+		9680B3571FFC1B4300C42AD8 /* PassStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassStage.swift; sourceTree = "<group>"; };
+		96AE610D1EF549BF00AFA495 /* Emoji math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96AE61101EF549BF00AFA495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCCC0001BBBB000100000001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		96AE61121EF549BF00AFA495 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		96AE61151EF549BF00AFA495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96AE61171EF549BF00AFA495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96AE611C1EF549BF00AFA495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96AE61211EF549C000AFA495 /* Emoji mathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emoji mathTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96AE61251EF549C000AFA495 /* Math_Quiz_ObjectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math_Quiz_ObjectsTests.swift; sourceTree = "<group>"; };
+		96AE61271EF549C000AFA495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96AE612C1EF549C000AFA495 /* Emoji mathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emoji mathUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96AE61301EF549C000AFA495 /* Math_Quiz_ObjectsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math_Quiz_ObjectsUITests.swift; sourceTree = "<group>"; };
+		96AE61321EF549C000AFA495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96B9DEC12079286800B06193 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		96E2F13720385CFA00798F93 /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
+		96E2F1392038BF0000798F93 /* Emoji math.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Emoji math.entitlements"; sourceTree = "<group>"; };
+		96F43B1F1F2CB0EB005CDBB1 /* EquationGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquationGenerator.swift; sourceTree = "<group>"; };
+		E1D8D8D80010000100000001 /* Date+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
+		E1D8D8D80010000200000001 /* UIImage+Masking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Masking.swift"; sourceTree = "<group>"; };
+		E1D8D8D80010000300000001 /* String+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
+		EEEE0001AAAA000100000001 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EEEE0002AAAA000100000001 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		EEEE0003AAAA000100000001 /* GameCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterManager.swift; sourceTree = "<group>"; };
+		EEEE0004AAAA000100000001 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		F1E2D3C4B5A69870605040302 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96AE610A1EF549BF00AFA495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96262BD42038CA5300D3F62D /* GameKit.framework in Frameworks */,
+				AA0001000000000000000003 /* FirebaseAnalytics in Frameworks */,
+				AA0002000000000000000003 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96AE611E1EF549C000AFA495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96AE61291EF549C000AFA495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96262BD22038CA5300D3F62D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96262BD32038CA5300D3F62D /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96AE61041EF549BF00AFA495 = {
+			isa = PBXGroup;
+			children = (
+				96AE610F1EF549BF00AFA495 /* Emoji math */,
+				96AE61241EF549C000AFA495 /* Emoji mathTests */,
+				96AE612F1EF549C000AFA495 /* Emoji mathUITests */,
+				96AE610E1EF549BF00AFA495 /* Products */,
+				96262BD22038CA5300D3F62D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96AE610E1EF549BF00AFA495 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96AE610D1EF549BF00AFA495 /* Emoji math.app */,
+				96AE61211EF549C000AFA495 /* Emoji mathTests.xctest */,
+				96AE612C1EF549C000AFA495 /* Emoji mathUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96AE610F1EF549BF00AFA495 /* Emoji math */ = {
+			isa = PBXGroup;
+			children = (
+				96E2F1392038BF0000798F93 /* Emoji math.entitlements */,
+				96AE61171EF549BF00AFA495 /* Assets.xcassets */,
+				96AE611C1EF549BF00AFA495 /* Info.plist */,
+				9653DC2F20763F0100F0F75B /* GoogleService-Info.plist */,
+				F1E2D3C4B5A69870605040302 /* PrivacyInfo.xcprivacy */,
+				96AE61101EF549BF00AFA495 /* AppDelegate.swift */,
+				CCCC0001BBBB000100000001 /* SceneDelegate.swift */,
+				EEEE0004AAAA000100000001 /* AdManager.swift */,
+				EEEE0002AAAA000100000001 /* AudioManager.swift */,
+				EEEE0001AAAA000100000001 /* Constants.swift */,
+				E1D8D8D80010000100000001 /* Date+Helpers.swift */,
+				EEEE0003AAAA000100000001 /* GameCenterManager.swift */,
+				960E22622081506800EE2542 /* CustomAd.swift */,
+				96F43B1F1F2CB0EB005CDBB1 /* EquationGenerator.swift */,
+				96AE61121EF549BF00AFA495 /* MainController.swift */,
+				E1D8D8D80010000300000001 /* String+Validation.swift */,
+				9680B3571FFC1B4300C42AD8 /* PassStage.swift */,
+				96E2F13720385CFA00798F93 /* SaveData.swift */,
+				96B9DEC12079286800B06193 /* SplashScreen.swift */,
+				966794D81FD07F3B0046DF38 /* Stages.swift */,
+				965A8A0A1FA7C3A0008C49AB /* StartScreen.swift */,
+				E1D8D8D80010000200000001 /* UIImage+Masking.swift */,
+				96AE61141EF549BF00AFA495 /* Main.storyboard */,
+				9642C785202CC0A60035AF8E /* LaunchScreen.storyboard */,
+				962477E820C13489009E3856 /* sound.fifty.mp3 */,
+				962477F020C18648009E3856 /* sound.hint.mp3 */,
+				962477E420C12995009E3856 /* sound.timer.mp3 */,
+				962737EA20225C8400D9E759 /* sound.button.click.mp3 */,
+				962737EB20225C8400D9E759 /* sound.correct.answer.mp3 */,
+				962737E920225C8300D9E759 /* sound.out.of.time.mp3 */,
+				962737E720225C8200D9E759 /* sound.pass.stage.mp3 */,
+				962737E820225C8300D9E759 /* sound.wrong.answer.mp3 */,
+				96678FE7202B7B060017D2A0 /* Emoji math-Bridging-Header.h */,
+			);
+			path = "Emoji math";
+			sourceTree = "<group>";
+		};
+		96AE61241EF549C000AFA495 /* Emoji mathTests */ = {
+			isa = PBXGroup;
+			children = (
+				96AE61251EF549C000AFA495 /* Math_Quiz_ObjectsTests.swift */,
+				96AE61271EF549C000AFA495 /* Info.plist */,
+			);
+			path = "Emoji mathTests";
+			sourceTree = "<group>";
+		};
+		96AE612F1EF549C000AFA495 /* Emoji mathUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96AE61301EF549C000AFA495 /* Math_Quiz_ObjectsUITests.swift */,
+				96AE61321EF549C000AFA495 /* Info.plist */,
+			);
+			path = "Emoji mathUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96AE610C1EF549BF00AFA495 /* Emoji math */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96AE61351EF549C000AFA495 /* Build configuration list for PBXNativeTarget "Emoji math" */;
+			buildPhases = (
+				96AE61091EF549BF00AFA495 /* Sources */,
+				96AE610A1EF549BF00AFA495 /* Frameworks */,
+				96AE610B1EF549BF00AFA495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emoji math";
+			packageProductDependencies = (
+				AA0001000000000000000002 /* FirebaseAnalytics */,
+				AA0002000000000000000002 /* GoogleMobileAds */,
+			);
+			productName = "Emoji math";
+			productReference = 96AE610D1EF549BF00AFA495 /* Emoji math.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96AE61201EF549C000AFA495 /* Emoji mathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96AE61381EF549C000AFA495 /* Build configuration list for PBXNativeTarget "Emoji mathTests" */;
+			buildPhases = (
+				96AE611D1EF549C000AFA495 /* Sources */,
+				96AE611E1EF549C000AFA495 /* Frameworks */,
+				96AE611F1EF549C000AFA495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96AE61231EF549C000AFA495 /* PBXTargetDependency */,
+			);
+			name = "Emoji mathTests";
+			productName = "Emoji mathTests";
+			productReference = 96AE61211EF549C000AFA495 /* Emoji mathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96AE612B1EF549C000AFA495 /* Emoji mathUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96AE613B1EF549C000AFA495 /* Build configuration list for PBXNativeTarget "Emoji mathUITests" */;
+			buildPhases = (
+				96AE61281EF549C000AFA495 /* Sources */,
+				96AE61291EF549C000AFA495 /* Frameworks */,
+				96AE612A1EF549C000AFA495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96AE612E1EF549C000AFA495 /* PBXTargetDependency */,
+			);
+			name = "Emoji mathUITests";
+			productName = "Emoji mathUITests";
+			productReference = 96AE612C1EF549C000AFA495 /* Emoji mathUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96AE61051EF549BF00AFA495 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 2640;
+				ORGANIZATIONNAME = "Nir Hayun";
+				TargetAttributes = {
+					96AE610C1EF549BF00AFA495 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9G4NHNJLNP;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					96AE61201EF549C000AFA495 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9G4NHNJLNP;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 96AE610C1EF549BF00AFA495;
+					};
+					96AE612B1EF549C000AFA495 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9G4NHNJLNP;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 96AE610C1EF549BF00AFA495;
+					};
+				};
+			};
+			buildConfigurationList = 96AE61081EF549BF00AFA495 /* Build configuration list for PBXProject "Emoji math" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 96AE61041EF549BF00AFA495;
+			packageReferences = (
+				AA0001000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AA0002000000000000000001 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			productRefGroup = 96AE610E1EF549BF00AFA495 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96AE610C1EF549BF00AFA495 /* Emoji math */,
+				96AE61201EF549C000AFA495 /* Emoji mathTests */,
+				96AE612B1EF549C000AFA495 /* Emoji mathUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96AE610B1EF549BF00AFA495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962737EE20225C8400D9E759 /* sound.out.of.time.mp3 in Resources */,
+				962737EF20225C8400D9E759 /* sound.button.click.mp3 in Resources */,
+				962477F120C18648009E3856 /* sound.hint.mp3 in Resources */,
+				9642C786202CC0A60035AF8E /* LaunchScreen.storyboard in Resources */,
+				962477EA20C1348A009E3856 /* sound.fifty.mp3 in Resources */,
+				962737ED20225C8400D9E759 /* sound.wrong.answer.mp3 in Resources */,
+				96AE61181EF549BF00AFA495 /* Assets.xcassets in Resources */,
+				962477E720C12996009E3856 /* sound.timer.mp3 in Resources */,
+				962737F020225C8400D9E759 /* sound.correct.answer.mp3 in Resources */,
+				962737EC20225C8400D9E759 /* sound.pass.stage.mp3 in Resources */,
+				96AE61161EF549BF00AFA495 /* Main.storyboard in Resources */,
+				9653DC3020763F0100F0F75B /* GoogleService-Info.plist in Resources */,
+				F1E2D3C4B5A69870605040303 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96AE611F1EF549C000AFA495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96AE612A1EF549C000AFA495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96AE61091EF549BF00AFA495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96AE61131EF549BF00AFA495 /* MainController.swift in Sources */,
+				EEEE0004AAAA000100000002 /* AdManager.swift in Sources */,
+				EEEE0002AAAA000100000002 /* AudioManager.swift in Sources */,
+				EEEE0001AAAA000100000002 /* Constants.swift in Sources */,
+				E1D8D8D80010000100000002 /* Date+Helpers.swift in Sources */,
+				EEEE0003AAAA000100000002 /* GameCenterManager.swift in Sources */,
+				E1D8D8D80010000200000002 /* UIImage+Masking.swift in Sources */,
+				E1D8D8D80010000300000002 /* String+Validation.swift in Sources */,
+				9680B3581FFC1B4300C42AD8 /* PassStage.swift in Sources */,
+				96B9DEC22079286900B06193 /* SplashScreen.swift in Sources */,
+				96E2F13820385CFA00798F93 /* SaveData.swift in Sources */,
+				96F43B201F2CB0EB005CDBB1 /* EquationGenerator.swift in Sources */,
+				965A8A0B1FA7C3A0008C49AB /* StartScreen.swift in Sources */,
+				960E22632081506800EE2542 /* CustomAd.swift in Sources */,
+				966794D91FD07F3B0046DF38 /* Stages.swift in Sources */,
+				96AE61111EF549BF00AFA495 /* AppDelegate.swift in Sources */,
+				CCCC0001BBBB000100000002 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96AE611D1EF549C000AFA495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96AE61261EF549C000AFA495 /* Math_Quiz_ObjectsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96AE61281EF549C000AFA495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96AE61311EF549C000AFA495 /* Math_Quiz_ObjectsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96AE61231EF549C000AFA495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96AE610C1EF549BF00AFA495 /* Emoji math */;
+			targetProxy = 96AE61221EF549C000AFA495 /* PBXContainerItemProxy */;
+		};
+		96AE612E1EF549C000AFA495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96AE610C1EF549BF00AFA495 /* Emoji math */;
+			targetProxy = 96AE612D1EF549C000AFA495 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96AE61141EF549BF00AFA495 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96AE61151EF549BF00AFA495 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96AE61331EF549C000AFA495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9G4NHNJLNP;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96AE61341EF549C000AFA495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9G4NHNJLNP;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96AE61361EF549C000AFA495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Emoji math/Emoji math.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Emoji\\ math",
+					"$(PROJECT_DIR)/Emoji\\ math",
+				);
+				INFOPLIST_FILE = "Emoji math/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nirhayun.Emojimath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Emoji math/Emoji math-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		96AE61371EF549C000AFA495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Emoji math/Emoji math.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+			FRAMEWORK_SEARCH_PATHS = (
+				"$(inherited)",
+				"$(PROJECT_DIR)/Emoji\\ math",
+			);
+				INFOPLIST_FILE = "Emoji math/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nirhayun.Emojimath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Emoji math/Emoji math-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		96AE61391EF549C000AFA495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Emoji mathTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nirhayun.Math-Quiz-ObjectsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emoji math.app/Emoji math";
+			};
+			name = Debug;
+		};
+		96AE613A1EF549C000AFA495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Emoji mathTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nirhayun.Math-Quiz-ObjectsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emoji math.app/Emoji math";
+			};
+			name = Release;
+		};
+		96AE613C1EF549C000AFA495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Emoji mathUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nirhayun.Math-Quiz-ObjectsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Emoji math";
+			};
+			name = Debug;
+		};
+		96AE613D1EF549C000AFA495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Emoji mathUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nirhayun.Math-Quiz-ObjectsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Emoji math";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96AE61081EF549BF00AFA495 /* Build configuration list for PBXProject "Emoji math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96AE61331EF549C000AFA495 /* Debug */,
+				96AE61341EF549C000AFA495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96AE61351EF549C000AFA495 /* Build configuration list for PBXNativeTarget "Emoji math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96AE61361EF549C000AFA495 /* Debug */,
+				96AE61371EF549C000AFA495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96AE61381EF549C000AFA495 /* Build configuration list for PBXNativeTarget "Emoji mathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96AE61391EF549C000AFA495 /* Debug */,
+				96AE613A1EF549C000AFA495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96AE613B1EF549C000AFA495 /* Build configuration list for PBXNativeTarget "Emoji mathUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96AE613C1EF549C000AFA495 /* Debug */,
+				96AE613D1EF549C000AFA495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA0001000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+		AA0002000000000000000001 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA0001000000000000000002 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0001000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		AA0002000000000000000002 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0002000000000000000001 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 96AE61051EF549BF00AFA495 /* Project object */;
+}

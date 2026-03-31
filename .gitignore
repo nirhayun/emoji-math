@@ -1,0 +1,39 @@
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Swift Package Manager
+.build/
+
+# CocoaPods
+Pods/
+
+# Legacy embedded frameworks (Facebook SDK)
+*.framework/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.dropbox
+Icon?
+
+# Sensitive
+GoogleService-Info.plist
